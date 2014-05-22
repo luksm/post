@@ -32,7 +32,7 @@ class Post extends PostAppModel
 	        'fields' => array(
 	        	'published' => array(1, 0)
 	        )
-	    )	    
+	    )
 	);
 
 /**
