@@ -4,7 +4,7 @@ App::uses('PostAppController', 'Post.Controller');
  * Posts Controller
  *
  */
-class PostsController extends PostAppController 
+class PostsController extends PostAppController
 {
 
     /**
@@ -122,7 +122,7 @@ class PostsController extends PostAppController
             throw new NotFoundException(__('Invalid post'));
         }
 
-        if ($this->Post->toggle(1, 'published')) {
+        if ($this->Post->toggle($id, 'published')) {
             $this->Session->setFlash(__('The post has been published.'));
         } else {
             $this->Session->setFlash(__('The post has been unpublished.'));
